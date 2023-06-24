@@ -15,29 +15,28 @@ function insertBook(newBook) {
   fs.writeFileSync('books.json', JSON.stringify([...books, newBook]));
 }
 
-function patchBookID(id, update) {
-  const book = getBookId(id)
-  const books = getAllBooks()
-  const itemUpdate = { ...book, nome: update.nome }
+function patchBookID(modifications, id) {
+  let booksCurrent = JSON.parse(fs.readFileSync('books.json'));
+  const indiceModification = booksCurrent.findIndex((book) => book.id === id);
 
-  if (book) {
+  //comparative
+  const contentNew = { ...booksCurrent[indiceModification], ...modifications };
+  //booksCurrent[indiceModification] = {id: "2", nome: "livro irado"}
+  //modifications = {nome: "nomealeatorio"}
+  booksCurrent[indiceModification] = contentNew;
+  fs.writeFileSync('books.json', JSON.stringify(booksCurrent));
+}
 
-    books.forEach((bookArray) => {
-      if (bookArray.id === itemUpdate.id) {
-        bookArray.nome = itemUpdate.nome;
-      }
-    });
-
-    fs.writeFileSync('books.json', JSON.stringify(books));
-  }
-  else {
-    console.log('livro não encontrado')
-  }
+function deleteBookID(id) {
+  let books = JSON.parse(fs.readFileSync('books.json'));
+  books = books.filter((book) => book.id !== id);
+  fs.writeFileSync('books.json', JSON.stringify([...books]));
 }
 
 module.exports = {
   getAllBooks,
   getBookId,
   insertBook,
-  patchBookID
+  patchBookID,
+  deleteBookID,
 };

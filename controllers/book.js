@@ -1,4 +1,10 @@
-const { getAllBooks, getBookId, insertBook, patchBookID } = require('../services/services');
+const {
+  getAllBooks,
+  getBookId,
+  insertBook,
+  patchBookID,
+  deleteBookID,
+} = require('../services/services');
 
 function getBooks(req, res) {
   try {
@@ -37,10 +43,22 @@ function postBook(req, res) {
 
 function patchBook(req, res) {
   try {
-    const id = req.params.id; //pegando parametro enviado pelo usuario
-    const updateBook = req.body
-    patchBookID(id, updateBook);
-    res.send("Patch feito com sucesso")
+    const id = req.params.id;
+    const body = req.body;
+    patchBookID(body, id);
+    res.send('item modificado com sucesso');
+    res.status(200);
+  } catch (error) {
+    res.status(500);
+    res.send(error.message);
+  }
+}
+
+function deleteBook(req, res) {
+  try {
+    const id = req.params.id;
+    deleteBookID(id);
+    res.send('livro deletado com sucesso');
   } catch (error) {
     res.status(500);
     res.send(error.message);
@@ -51,5 +69,6 @@ module.exports = {
   getBooks,
   getBook,
   postBook,
-  patchBook
+  patchBook,
+  deleteBook,
 };
