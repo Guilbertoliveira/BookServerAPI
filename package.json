@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write \"controllers/**/*\" \"routes/**/*\""
+    "format": "prettier --write \"controllers/**/*\" \"routes/**/*\" \"services/**/*\""
   },
   "author": "Guilbert Oliveira",
   "license": "ISC",

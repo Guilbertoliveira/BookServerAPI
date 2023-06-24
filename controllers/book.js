@@ -1,8 +1,8 @@
-const fs = require('fs');
+const { getAllBooks, getBookId, insertBook, patchBookID } = require('../services/services');
 
 function getBooks(req, res) {
   try {
-    const books = JSON.parse(fs.readFileSync('books.json')); //nesse caso vai apenas pegar os dados existente no json
+    const books = getAllBooks(); //nesse caso vai apenas pegar os dados existente no json
     res.send(books);
   } catch (error) {
     //retornando erro 500 caso não ache o get
@@ -11,6 +11,45 @@ function getBooks(req, res) {
   }
 }
 
+function getBook(req, res) {
+  try {
+    const id = req.params.id; //pegando parametro enviado pelo usuario
+    const book = getBookId(id); //nesse caso vai apenas pegar os dados existente no json
+    res.send(book);
+  } catch (error) {
+    //retornando erro 500 caso não ache o get
+    res.status(500);
+    res.send(error.message);
+  }
+}
+
+function postBook(req, res) {
+  try {
+    const newBook = req.body; //pegando informação enviada pelo frontend
+    insertBook(newBook);
+    res.status(201); //criaçaõ sucesso
+    res.send('Livro inserido com sucesso');
+  } catch (error) {
+    res.status(500);
+    res.send(error.message);
+  }
+}
+
+function patchBook(req, res) {
+  try {
+    const id = req.params.id; //pegando parametro enviado pelo usuario
+    const updateBook = req.body
+    patchBookID(id, updateBook);
+    res.send("Patch feito com sucesso")
+  } catch (error) {
+    res.status(500);
+    res.send(error.message);
+  }
+}
+
 module.exports = {
   getBooks,
+  getBook,
+  postBook,
+  patchBook
 };
