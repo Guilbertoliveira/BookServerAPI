@@ -5,7 +5,7 @@ function getAllBooks() {
 }
 
 function getBookId(id) {
-  //com parametros na url
+  //with parameters in the URL
   const books = JSON.parse(fs.readFileSync('books.json'));
   return books.filter((book) => book.id === id)[0];
 }
@@ -21,8 +21,8 @@ function patchBookID(modifications, id) {
 
   //comparative
   const contentNew = { ...booksCurrent[indiceModification], ...modifications };
-  //booksCurrent[indiceModification] = {id: "2", nome: "livro irado"}
-  //modifications = {nome: "nomealeatorio"}
+  //booksCurrent[indiceModification] = {id: "2", name: "livro irado"}
+  //modifications = {name: "randomname"}
   booksCurrent[indiceModification] = contentNew;
   fs.writeFileSync('books.json', JSON.stringify(booksCurrent));
 }

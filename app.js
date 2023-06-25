@@ -1,13 +1,13 @@
-const express = require('express'); //importando função require
+const express = require('express'); //importing require function
 const routeBook = require('./routes/book');
-const app = express(); //criando require
-app.use(express.json()) //utlizado para receber os body para o post no json
-const port = 8000; //definindo porta
+const app = express(); //creating require
+app.use(express.json()) //used to receive the body for the post in the json
+const port = 8000; //defining port
 
-//direcionando o caminho e qual get deverá receber
+//directing the path and which get should receive
 app.use('/book', routeBook);
 
-//deixando a aplicação escutando na porta 8000
+//leaving the application listening on port 8000
 app.listen(port, () => {
-    console.log(`Escutando a porta ${port}`);
+    console.log(`listening on port: ${port}`);
 });

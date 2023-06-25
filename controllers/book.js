@@ -8,10 +8,10 @@ const {
 
 function getBooks(req, res) {
   try {
-    const books = getAllBooks(); //nesse caso vai apenas pegar os dados existente no json
+    const books = getAllBooks(); //in this case it will just get the existing data in the json
     res.send(books);
   } catch (error) {
-    //retornando erro 500 caso não ache o get
+    //returning error 500 if the get is not found
     res.status(500);
     res.send(error.message);
   }
@@ -19,11 +19,16 @@ function getBooks(req, res) {
 
 function getBook(req, res) {
   try {
-    const id = req.params.id; //pegando parametro enviado pelo usuario
-    const book = getBookId(id); //nesse caso vai apenas pegar os dados existente no json
-    res.send(book);
+    const id = req.params.id; //getting parameter sent by the user
+    if (id && Number()) {
+      const book = getBookId(id); //in this case it will just get the existing data in the json
+      res.send(book);
+    } else {
+      res.status(400); //user inconsistent data error
+      res.send('id inválido');
+    }
   } catch (error) {
-    //retornando erro 500 caso não ache o get
+    //returning error 500 if the get is not found
     res.status(500);
     res.send(error.message);
   }
@@ -31,10 +36,20 @@ function getBook(req, res) {
 
 function postBook(req, res) {
   try {
-    const newBook = req.body; //pegando informação enviada pelo frontend
-    insertBook(newBook);
-    res.status(201); //criaçaõ sucesso
-    res.send('Livro inserido com sucesso');
+    const newBook = req.body; //getting information sent by the front end
+    if (req.body.name && newBook.name.length > 3) {
+      insertBook(newBook);
+      res
+        .status(201)
+        .json({ msg: `Livro ${newBook.name} has been inserted successfully` }); //successful creation
+      // res.send('has been inserted successfully');
+    } else {
+      const retorno =
+        newBook.name == null
+          ? `The submitted book does not contain the property 'name'.`
+          : `The book ${newBook.name} sent has the value less than 3 characters.`;
+      res.status(422).json({ msg: retorno });
+    }
   } catch (error) {
     res.status(500);
     res.send(error.message);
@@ -44,10 +59,16 @@ function postBook(req, res) {
 function patchBook(req, res) {
   try {
     const id = req.params.id;
-    const body = req.body;
-    patchBookID(body, id);
-    res.send('item modificado com sucesso');
-    res.status(200);
+
+    if (id && Number()) {
+      const body = req.body;
+      patchBookID(body, id);
+      res.send('successfully modified object');
+      res.status(200);
+    } else {
+      res.status(422); //user inconsistent data error
+      res.send('invalid id');
+    }
   } catch (error) {
     res.status(500);
     res.send(error.message);
@@ -57,8 +78,14 @@ function patchBook(req, res) {
 function deleteBook(req, res) {
   try {
     const id = req.params.id;
-    deleteBookID(id);
-    res.send('livro deletado com sucesso');
+
+    if (id && Number(id)) {
+      deleteBookID(id);
+      res.send('successfully deleted book');
+    } else {
+      res.status(500);
+      res.send(error.message);
+    }
   } catch (error) {
     res.status(500);
     res.send(error.message);
