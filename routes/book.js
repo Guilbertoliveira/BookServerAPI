@@ -9,7 +9,7 @@ const {
 
 const router = Router();
 
-//(parametro1 (rota), parametro2(requisição, resposta))
+//(parameter1 (route), parameter2(request, response))
 router.get('/', getBooks);
 
 router.get('/:id', getBook);
@@ -20,5 +20,5 @@ router.patch('/:id', patchBook);
 
 router.delete('/:id', deleteBook);
 
-//exportando para ser utilizado em outros arquivos
+//exporting to be used in other files
 module.exports = router;
