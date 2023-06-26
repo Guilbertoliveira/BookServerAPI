@@ -45,7 +45,15 @@ npm install
 npx nodemon .\app.js
 ```
 
-<ol>
+</ol>
 
-
+<h2>Methods being used (CRUD)</h2>
+<h3>Post</h3>
+<img src="https://github.com/Guilbertoliveira/BookServerAPI/assets/41201436/0105ffb6-4d45-4a8d-816d-8574afe98b4e" width="750">
+<h3>Get</h3>
+<img src="https://github.com/Guilbertoliveira/BookServerAPI/assets/41201436/61ebb0b4-6a79-4e6a-bf2f-19cc2e1b9a9d" width="750">
+<h3>Patch</h3>
+<img src="https://github.com/Guilbertoliveira/BookServerAPI/assets/41201436/b4360dbe-8850-46fa-848b-8bb462c6ce07" width="750">
+<h3>Delete</h3>
+<img src="https://github.com/Guilbertoliveira/BookServerAPI/assets/41201436/0ecf0508-812a-4df3-9a46-6bea28df9e2e" width="750">
 
