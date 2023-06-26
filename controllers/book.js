@@ -20,8 +20,11 @@ function getBooks(req, res) {
 function getBook(req, res) {
   try {
     const id = req.params.id; //getting parameter sent by the user
-    if (id && Number()) {
+    if (id && Number(id)) {
       const book = getBookId(id); //in this case it will just get the existing data in the json
+      if (book === undefined) {
+        res.status(422).json("id not found");
+      }
       res.send(book);
     } else {
       res.status(400); //user inconsistent data error
@@ -60,7 +63,7 @@ function patchBook(req, res) {
   try {
     const id = req.params.id;
 
-    if (id && Number()) {
+    if (id && Number(id)) {
       const body = req.body;
       patchBookID(body, id);
       res.send('successfully modified object');
