@@ -49,11 +49,11 @@ npx nodemon .\app.js
 
 <h2>Methods being used (CRUD)</h2>
 <h3>Post</h3>
-<img src="https://github.com/Guilbertoliveira/BookServerAPI/assets/41201436/0105ffb6-4d45-4a8d-816d-8574afe98b4e" width="750">
+<img src="https://github.com/Guilbertoliveira/BookServerAPI/assets/41201436/22b5fab9-e344-4e55-b26b-1693c622ccf5" width="750">
 <h3>Get</h3>
-<img src="https://github.com/Guilbertoliveira/BookServerAPI/assets/41201436/61ebb0b4-6a79-4e6a-bf2f-19cc2e1b9a9d" width="750">
+<img src="https://github.com/Guilbertoliveira/BookServerAPI/assets/41201436/915ad5c1-0115-492e-a983-cbd8fbb749f8" width="750">
 <h3>Patch</h3>
-<img src="https://github.com/Guilbertoliveira/BookServerAPI/assets/41201436/b4360dbe-8850-46fa-848b-8bb462c6ce07" width="750">
+<img src="https://github.com/Guilbertoliveira/BookServerAPI/assets/41201436/46c4b417-2024-4be2-844c-40444b98ede4" width="750">
 <h3>Delete</h3>
-<img src="https://github.com/Guilbertoliveira/BookServerAPI/assets/41201436/0ecf0508-812a-4df3-9a46-6bea28df9e2e" width="750">
+<img src="https://github.com/Guilbertoliveira/BookServerAPI/assets/41201436/5b31b870-4c13-4c8e-b281-69367a0737b2" width="750">
 
