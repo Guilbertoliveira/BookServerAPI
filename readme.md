@@ -1,4 +1,11 @@
+<div align="center">
 <h1>ReactBookServer</h1>
+    <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Guilbertoliveira/BookServerAPI" />
+    <img alt="GitHub Closed Pull Requests" src="https://img.shields.io/github/issues-pr-closed/Guilbertoliveira/BookServerAPI" />
+    <img alt="GitHub Package.json Version" src="https://img.shields.io/github/package-json/v/Guilbertoliveira/BookServerAPI" />
+    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/Guilbertoliveira/BookServerAPI" />
+    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Guilbertoliveira/BookServerAPI" />
+</div>
 
 <h2>:hammer:Project Status:hammer:</h2>
 <p>Final stage project</p>
