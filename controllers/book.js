@@ -63,7 +63,7 @@ function patchBook(req, res) {
   try {
     const id = req.params.id;
 
-    if (id && Number()) {
+    if (id && Number(id)) {
       const body = req.body;
       patchBookID(body, id);
       res.send('successfully modified object');
