@@ -4,7 +4,7 @@ const {
   insertBook,
   patchBookID,
   deleteBookID,
-} = require('../services/services');
+} = require('../services/books');
 
 function getBooks(req, res) {
   try {
