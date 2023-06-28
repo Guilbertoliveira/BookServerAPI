@@ -1,7 +1,9 @@
 const express = require('express'); //importing require function
 const routeBook = require('./routes/book');
+const cors = require('cors');  //releasing server to receive requests
 const app = express(); //creating require
 app.use(express.json()) //used to receive the body for the post in the json
+app.use(cors({ origin: "*" })) //releasing server to receive requests
 const port = 8000; //defining port
 
 //directing the path and which get should receive
