@@ -1,5 +1,7 @@
 const {
-    getAllFavorites
+    getAllFavorites,
+    deleteFavoritesID,
+    insertFavorites
 } = require('../services/favorites');
 
 function getFavorites(req, res) {
@@ -12,7 +14,6 @@ function getFavorites(req, res) {
         res.send(error.message);
     }
 }
-
 
 function postFavorite(req, res) {
     try {
