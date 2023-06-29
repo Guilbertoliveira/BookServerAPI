@@ -16,7 +16,7 @@ function insertFavorites(id) {
     const favorites = JSON.parse(fs.readFileSync('favorites.json'));
     const insertBook = books.find(book => book.id === id)
     const newListFavorite = [...favorites, insertBook]
-    fs.writeFileSync('favorites.json', JSON.stringify([newListFavorite]));
+    fs.writeFileSync('favorites.json', JSON.stringify(newListFavorite));
 }
 
 module.exports = {
