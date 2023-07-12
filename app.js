@@ -1,6 +1,7 @@
 const express = require('express'); //importing require function
 const routeBook = require('./routes/book');
 const routeFavorite = require('./routes/favorites')
+const routeClient = require('./routes/client');
 
 const cors = require('cors');  //releasing server to receive requests
 
@@ -13,6 +14,7 @@ const port = 8000; //defining port
 //directing the path and which get should receive
 app.use('/book', routeBook);
 app.use('/favorites', routeFavorite);
+app.use('/client', routeClient);
 
 //leaving the application listening on port 8000
 app.listen(port, () => {

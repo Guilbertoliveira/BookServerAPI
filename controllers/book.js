@@ -23,7 +23,7 @@ function getBook(req, res) {
     if (id && Number(id)) {
       const book = getBookId(id); //in this case it will just get the existing data in the json
       if (book === undefined) {
-        res.status(422).json("id not found");
+        res.status(422).json('id not found');
       }
       res.send(book);
     } else {
