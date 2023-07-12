@@ -3,6 +3,8 @@ const {
   insertClient,
   verificationClient,
 } = require('../services/client');
+const jwt = require('jsonwebtoken');
+const SECRET = 'guilberttools'
 
 function getClients(req, res) {
   try {
@@ -46,14 +48,18 @@ function postLogin(req, res) {
 
       if (!user || user.senha !== resLogin.senha) {
         return res.status(401).json({ message: 'invalid credentials' });
-      } else {
-        console.log('nice job');
-        res.status(201).json({
-          msg: `Usuario ${resLogin.email} has logged`,
-        }); //successful creation
-        // res.send('has been inserted successfully');
       }
-    } else {
+      const token = jwt.sign({ email: user.email }, SECRET, { expiresIn: '365d' })
+      console.log('nice job');
+      res.status(201).json({
+        msg: `${resLogin.email} has logged`,
+        auth: true,
+        token,
+        email: user.email
+      });
+    }
+
+    else {
       let retorno;
       if (resLogin.email == null || resLogin.senha == null) {
         retorno = 'empty input';
