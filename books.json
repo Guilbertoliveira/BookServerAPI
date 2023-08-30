@@ -3,7 +3,7 @@
         "id": "1",
         "name": "Aventuras de oie",
         "src": "https://edit.org/photos/img/blog/zz7-flyer-personalizavel-para-capas-de-livros.jpg-840.jpg",
-        "favorite": true,
+        "favorite": false,
         "describe": "Uma emocionante jornada repleta de aventuras e descobertas.",
         "category": "Aventura"
     },
@@ -11,7 +11,7 @@
         "id": "2",
         "name": "O Mistério do Mapa Perdido",
         "src": "https://marketplace.canva.com/EAD5VhqxfLs/1/0/1024w/canva-capa-de-livro-de-thriller-com-fotografias-monocrom%C3%A1ticas-da-floresta-ceg87OvGZmM.jpg",
-        "favorite": true,
+        "favorite": false,
         "describe": "Um mistério intrigante que envolve um mapa perdido e segredos ocultos.",
         "category": "Suspense"
     },
@@ -19,7 +19,7 @@
         "id": "3",
         "name": "A Última Esperança",
         "src": "https://i0.wp.com/resenhandosonhos.com/wp-content/uploads/2023/01/Melanie_capa.jpg?resize=400%2C603&ssl=1",
-        "favorite": true,
+        "favorite": false,
         "describe": "A Última Esperança é uma envolvente história que se passa em um mundo devastado. Nesse cenário sombrio, acompanhamos a jornada de um grupo de sobreviventes em busca de um futuro melhor. Com personagens cativantes e reviravoltas emocionantes, o livro explora temas como esperança, coragem e resiliência. Prepare-se para uma leitura impactante que nos faz refletir sobre a força do espírito humano diante das adversidades..",
         "category": "Ficção Distópica"
     },
@@ -27,7 +27,7 @@
         "id": "4",
         "name": "Segredos do Passado",
         "src": "https://m.media-amazon.com/images/I/91jad2ZB-YL._AC_UF1000,1000_QL80_.jpg",
-        "favorite": true,
+        "favorite": false,
         "describe": "Uma busca pelos segredos ocultos do passado que mudará tudo.",
         "category": "Mistério"
     },
@@ -35,7 +35,7 @@
         "id": "5",
         "name": "Noite de Terror",
         "src": "https://bocadoinferno.com.br/wp-content/uploads/2017/07/Noite-do-Terror-2006-6.jpg",
-        "favorite": true,
+        "favorite": false,
         "describe": "Uma noite assustadora repleta de mistério e perigo em cada esquina.",
         "category": "Terror"
     },
@@ -43,7 +43,7 @@
         "id": "6",
         "name": "O Enigma do Relógio",
         "src": "https://marketplace.canva.com/EAFkVtM93pk/1/0/1003w/canva-capa-de-livro-religioso-simples-marrom-e-branco-No3O87jL3Ug.jpg",
-        "favorite": true,
+        "favorite": false,
         "describe": "Um enigma misterioso que gira em torno de um relógio antigo e suas origens desconhecidas.",
         "category": "Suspense"
     },
@@ -90,7 +90,7 @@
         "id": "12",
         "name": "O Tesouro Perdido",
         "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiI8LJn6kQalG84hdnz9i98QU4eKWvRyDIquNzgNmTgMOmUuoUob7-ErkGLmMFkgHZAXg&usqp=CAU",
-        "favorite": true,
+        "favorite": false,
         "describe": "Um mistério adormecido que desperta e coloca tudo em risco.",
         "category": "Aventura"
     },
@@ -130,7 +130,7 @@
         "id": "17",
         "name": "A Chave do Destino",
         "src": "https://m.media-amazon.com/images/I/917tzzI-qDS._AC_UF1000,1000_QL80_.jpg",
-        "favorite": true,
+        "favorite": false,
         "describe": "Um grupo de náufragos luta para sobreviver em uma ilha misteriosa.",
         "category": "Aventura"
     },
@@ -139,7 +139,8 @@
         "name": "O Segredo da Mansão",
         "src": "https://marketplace.canva.com/EAFGgFKnZhM/1/0/1003w/canva-capa-de-livro-minimalista-de-auto-ajuda-com-foto-g2T3mu5oB1o.jpg",
         "describe": "Este livro, 'O Segredo da Mansão', é um mistério emocionante ambientado em uma mansão antiga. Explore os segredos sombrios que cercam a propriedade e desvende enigmas intrigantes enquanto mergulha na trama envolvente.",
-        "category": "Mistério"
+        "category": "Mistério",
+        "favorite": false
     },
     {
         "id": "19",
@@ -225,7 +226,7 @@
         "id": "29",
         "name": "O Segredo das Runas",
         "src": "https://m.media-amazon.com/images/I/8154yBEYVDL._AC_UF1000,1000_QL80_.jpg",
-        "favorite": true,
+        "favorite": false,
         "describe": "Desvende 'O Segredo das Runas' neste livro envolvente. Acompanhe o protagonista em uma jornada fascinante pela mitologia nórdica e pelos mistérios dos antigos símbolos rúnicos. Embarque em uma aventura repleta de magia, descobertas e perigos iminentes.",
         "category": "Fantasia"
     },
@@ -241,7 +242,7 @@
         "id": "31",
         "name": "O Enigma do Labirinto",
         "src": "https://edit.org/photos/img/blog/zz7-flyer-personalizavel-para-capas-de-livros.jpg-840.jpg",
-        "favorite": true,
+        "favorite": false,
         "describe": "'O Enigma do Labirinto' é uma história cheia de enigmas e desafios intrigantes. Acompanhe os protagonistas em uma aventura labiríntica em busca de respostas e descubra os segredos ocultos dentro das paredes misteriosas.",
         "category": "Aventura"
     },
@@ -249,7 +250,7 @@
         "id": "32",
         "name": "Trilhas do Destino",
         "src": "https://edit.org/photos/img/blog/zz7-flyer-personalizavel-para-capas-de-livros.jpg-840.jpg",
-        "favorite": true,
+        "favorite": false,
         "describe": "Prepare-se para uma jornada emocionante com 'Trilhas do Destino'. Acompanhe os personagens enquanto eles seguem caminhos tortuosos, enfrentam desafios inesperados e descobrem o verdadeiro significado do destino.",
         "category": "Aventura"
     },
@@ -337,14 +338,14 @@
         "id": "43",
         "name": "O Guia do Mochileiro das Galáxias",
         "src": "https://m.media-amazon.com/images/I/51qmrcyD4YL.jpg",
-        "favorite": true,
+        "favorite": false,
         "describe": "Uma aventura espacial cômica cheia de situações absurdas e personagens excêntricos.",
         "category": "Comédia"
     },
     {
         "id": "44",
         "name": "Admirável Mundo Novo",
-        "src": "https://bikas.com.br/wp-content/uploads/2020/08/119192169_1SZ.jpg",
+        "src": "https://images-americanas.b2w.io/produtos/5814181824/imagens/admiravel-mundo-novo/5814181824_1_large.jpg",
         "favorite": false,
         "describe": "Uma sátira sobre uma sociedade futurista que valoriza o prazer e a superficialidade.",
         "category": "Comédia"
@@ -353,7 +354,7 @@
         "id": "45",
         "name": "As Aventuras de Huckleberry Finn",
         "src": "https://www.lpm.com.br/livros/imagens/aventuras_de_huckleberry_finn__as_9788525421630_9788525423627_hd.jpg",
-        "favorite": true,
+        "favorite": false,
         "describe": "Um clássico da literatura que conta as divertidas peripécias de um jovem aventureiro.",
         "category": "Comédia"
     },
@@ -361,7 +362,7 @@
         "id": "46",
         "name": "Orgulho e Preconceito",
         "src": "https://cdn.kobo.com/book-images/7b0e1631-9550-459a-9914-ab53b5fdb82e/1200/1200/False/orgulho-e-preconceito-19.jpg",
-        "favorite": true,
+        "favorite": false,
         "describe": "Uma comédia romântica que explora os encontros e desencontros de casais apaixonados.",
         "category": "Comédia"
     },
@@ -369,7 +370,7 @@
         "id": "47",
         "name": "O Pequeno Príncipe",
         "src": "https://m.media-amazon.com/images/I/71BGWapQw8L._AC_UF1000,1000_QL80_.jpg",
-        "favorite": true,
+        "favorite": false,
         "describe": "Uma fábula encantadora e bem-humorada sobre um príncipe que visita diferentes planetas.",
         "category": "Comédia"
     }
